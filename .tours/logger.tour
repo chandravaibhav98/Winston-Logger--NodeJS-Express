@@ -1,0 +1,22 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "logger",
+  "steps": [
+    {
+      "file": "express-sequelize-logging/src/logger.js",
+      "description": "createLogger()",
+      "line": 12
+    },
+    {
+      "file": "express-sequelize-logging/src/logger.js",
+      "description": "Format",
+      "line": 3
+    },
+    {
+      "file": "express-sequelize-logging/src/config/database.js",
+      "description": "database - logging (message)",
+      "line": 15
+    }
+  ],
+  "ref": "main"
+}

@@ -1,0 +1,25 @@
+{"level":"error","message":"Error"}
+{"level":"warn","message":"Warn"}
+{"level":"info","message":"Info"}
+{"level":"verbose","message":"Verbose"}
+{"level":"debug","message":"Debug"}
+{"level":"info","message":"app is running in mode: "}
+2023-07-25T13:23:52.269Z - [ERROR   ] - Error
+2023-07-25T13:23:52.271Z - [WARN    ] - Warn
+2023-07-25T13:23:52.272Z - [INFO    ] - Info
+2023-07-25T13:23:52.272Z - [VERBOSE ] - Verbose
+2023-07-25T13:23:52.272Z - [DEBUG   ] - Debug
+2023-07-25T13:23:52.276Z - [INFO    ] - app is running in mode: 
+2023-07-25T13:23:52.296Z - [INFO    ] - Executing (default): DROP TABLE IF EXISTS `articles`;
+2023-07-25T13:23:52.305Z - [INFO    ] - Executing (default): DROP TABLE IF EXISTS `users`;
+2023-07-25T13:23:52.311Z - [INFO    ] - Executing (default): DROP TABLE IF EXISTS `users`;
+2023-07-25T13:23:52.314Z - [INFO    ] - Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `username` VARCHAR(255), `email` VARCHAR(255), `password` VARCHAR(255));
+2023-07-25T13:23:52.319Z - [INFO    ] - Executing (default): PRAGMA INDEX_LIST(`users`)
+2023-07-25T13:23:52.321Z - [INFO    ] - Executing (default): DROP TABLE IF EXISTS `articles`;
+2023-07-25T13:23:52.323Z - [INFO    ] - Executing (default): CREATE TABLE IF NOT EXISTS `articles` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `content` VARCHAR(255), `userId` NUMBER REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);
+2023-07-25T13:23:52.328Z - [INFO    ] - Executing (default): PRAGMA INDEX_LIST(`articles`)
+2023-07-25T13:23:52.392Z - [INFO    ] - Executing (default): INSERT INTO `users` (`id`,`username`,`email`,`password`) VALUES (NULL,$1,$2,$3);
+2023-07-25T13:23:52.457Z - [INFO    ] - Executing (default): INSERT INTO `users` (`id`,`username`,`email`,`password`) VALUES (NULL,$1,$2,$3);
+2023-07-25T13:23:52.523Z - [INFO    ] - Executing (default): INSERT INTO `users` (`id`,`username`,`email`,`password`) VALUES (NULL,$1,$2,$3);
+2023-07-25T13:23:52.588Z - [INFO    ] - Executing (default): INSERT INTO `users` (`id`,`username`,`email`,`password`) VALUES (NULL,$1,$2,$3);
+2023-07-25T13:23:52.654Z - [INFO    ] - Executing (default): INSERT INTO `users` (`id`,`username`,`email`,`password`) VALUES (NULL,$1,$2,$3);
